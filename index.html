@@ -14,10 +14,13 @@
   body{font-family:'Segoe UI',system-ui,Arial,sans-serif; background:var(--fondo); color:var(--texto); line-height:1.5;}
 
   header{background:linear-gradient(135deg,var(--azul) 0%,var(--azul-claro) 100%); color:#fff; padding:36px 24px 28px;}
-  .head-inner{max-width:1100px; margin:0 auto;}
+  .head-inner{max-width:1100px; margin:0 auto; position:relative;}
   header h1{font-size:1.7rem; font-weight:700; letter-spacing:.3px;}
   header .sub{margin-top:6px; font-size:1.02rem; opacity:.92;}
   header .empresa{margin-top:2px; font-size:.85rem; opacity:.75; text-transform:uppercase; letter-spacing:1.5px;}
+  .btn-descargar{display:inline-flex; align-items:center; gap:8px; margin-top:16px; background:var(--acento); color:#3a2a05; font-weight:700; font-size:.95rem; text-decoration:none; padding:11px 20px; border-radius:9px; box-shadow:0 3px 10px rgba(0,0,0,.18); transition:transform .12s, box-shadow .12s;}
+  .btn-descargar:hover{transform:translateY(-1px); box-shadow:0 5px 14px rgba(0,0,0,.25);}
+  .btn-descargar small{display:block; font-weight:500; font-size:.72rem; opacity:.8;}
 
   .stats{max-width:1100px; margin:-18px auto 0; padding:0 24px; display:flex; gap:14px; flex-wrap:wrap;}
   .stat{background:var(--blanco); border-radius:10px; box-shadow:var(--sombra); padding:14px 22px; min-width:130px; text-align:center;}
@@ -73,6 +76,10 @@
     <div class="empresa">Constructora Soteco S.A.S.</div>
     <h1>Manual de Funcionamiento</h1>
     <div class="sub">Ayura Center — Etapa 3 · Entregable al cliente</div>
+    <a class="btn-descargar" href="https://github.com/smhb1984-design/AYURA-CENTER-3-MANUAL-DE-MANTENIMIENTO/archive/refs/heads/main.zip">
+      ⬇ Descargar todo el manual
+      <small>archivo ZIP con toda la información organizada por carpetas</small>
+    </a>
   </div>
 </header>
 
@@ -88,6 +95,8 @@
     <b>Cómo usar este manual:</b> haga clic en un proveedor o categoría para ver sus documentos, o use el buscador.
     Cada documento se abre con un clic. Los planos <b>DWG</b> requieren AutoCAD (la mayoría también están en PDF);
     los archivos <b>MSG</b> son correos y se abren con Outlook.
+    ¿Prefiere tener todo en su computador? Use el botón <b>⬇ Descargar todo el manual</b> de arriba: obtendrá un ZIP con
+    todos los documentos organizados en sus carpetas; al descomprimirlo, abra <b>«INDICE - ABRIR AQUI»</b> para consultarlo sin internet.
   </div>
 
   <div id="contenedor"></div>
